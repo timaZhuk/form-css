@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <header>
+      <!-- <img src="img/logo.png" alt="Logo"> -->
+      <h2>Registration Form</h2>
+    </header>
+    <form action="">
+      <!-- Gender -->
+      <p>You are...</p>
+      <input type="radio" id="male" name="gender" />
+      <label for="male">Male</label><br />
+      <input type="radio" id="female" name="gender" />
+      <label for="female">Female</label><br />
+      <!-- Interests -->
+      <p>Who is interested in...</p>
+      <input type="checkbox" id="web" />
+      <label for="web">Web development</label><br />
+      <input type="checkbox" id="photoshop" />
+      <label for="photoshop">Photoshop</label><br />
+      <input type="checkbox" id="madona" />
+      <label for="madona">Like Madona songs</label><br />
+      <fieldset>
+        <legend>Contact Info</legend>
+        <input type="email" placeholder="Email" required />
+        <span class="tick"></span>
+        <input type="telephone" placeholder="Phone Number" required />
+        <span class="tick"></span>
+      </fieldset>
+      <p>Choose please. How we could contact with you?</p>
+      <select name="" id="">
+        <option value="">By email</option>
+        <option value="">By phonenumber</option>
+      </select>
+      <input type="submit" value="Send" />
+    </form>
+  </body>
+</html>

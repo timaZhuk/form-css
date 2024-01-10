@@ -1,0 +1,126 @@
+/* 1 Base Form Styles */
+body {
+  background: #141414;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  padding: 20px;
+  text-align: center;
+  color: #eee;
+}
+
+form {
+  margin: 20px;
+  color: #eee;
+}
+
+form p {
+  font-size: 18px;
+  letter-spacing: 0.1em;
+}
+
+/* 2 radio box styles */
+input[type="radio"] {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+label[for="male"],
+label[for="female"] {
+  margin-bottom: 10px;
+  display: inline-block;
+  padding-left: 26px;
+  background: url(img/checks.png) no-repeat;
+  background-position: 0 -32px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+input:checked + label[for="male"],
+input:checked + label[for="female"] {
+  background-position: 0 0;
+  color: #ce1010;
+}
+
+/* Checkbox styles */
+input[type="checkbox"] {
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+label[for="web"],
+label[for="photoshop"],
+label[for="madona"] {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding-left: 26px;
+  background: url(img/checks.png) no-repeat;
+  background-position: 0 -98px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+input:checked + label[for="web"],
+input:checked + label[for="photoshop"],
+input:checked + label[for="madona"] {
+  background-position: 0 -65px;
+  color: #ce1010;
+}
+
+/* Text Input and Fieldsets */
+fieldset {
+  padding: 20px;
+  margin: 20px;
+  border: 3px solid #222;
+  width: 40vw;
+}
+legend {
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 0.1m;
+}
+input[type="email"],
+input[type="telephone"] {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px 10px 10px 50px;
+  border-radius: 5px;
+  background: url(img/inputs.png) no-repeat;
+  background-color: #222;
+  font-size: 16px;
+  color: #fff;
+}
+
+input[type="email"] {
+  background-position: 7px 8px;
+}
+input[type="telephone"] {
+  background-position: 7px -58px;
+}
+
+/* Select Boxes */
+select {
+  appearance: none;
+  display: block;
+  margin: 30px 0;
+  padding: 10px 50px 10px 10px;
+  background: url(img/select.png) no-repeat 95% center;
+  background-color: #222;
+  color: #fff;
+  border-radius: 4px;
+  border: 2px solid #fff;
+  width: 280px;
+}
+
+input[type="submit"] {
+  background-color: #b61111;
+  padding: 15px;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  border: 0;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+}
